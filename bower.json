@@ -1,0 +1,28 @@
+{
+  "name": "Bevents",
+  "version": "1.0.0",
+  "authors": [
+    "Kumbi Madzinga"
+  ],
+  "license": "MIT",
+  "description": "Website",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "~2.1.4"
+  },
+  "devDependencies": {
+    "flexibility": "^1.0.6",
+    "bowser": "^1.2.0",
+    "jquery-ui": "jqueryui#^1.12.0"
+  },
+  "main": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "vendor"
+  ]
+}

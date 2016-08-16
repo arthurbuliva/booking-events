@@ -1,0 +1,155 @@
+
+/*  Buttons */
+/* ==================================================== */
+
+
+.button {
+	&-solid {
+		@include button-style(solid);
+
+		&:hover,
+		&:focus,
+		&:active {
+			@include button-style(outline);
+		}
+	}
+
+	&-outline {
+		@include button-style(outline);
+
+		&:hover,
+		&:focus,
+		&:active {
+			@include button-style(solid);
+		}
+	}
+
+	&-large {
+		@include button-size(large);
+	}
+
+	&-small {
+		@include button-size(small);
+	}
+
+	&-left {
+		@extend %float-left;
+
+		&:not(:first-of-type) {
+			margin-left: calc(#{$space-tiny} * 2);
+		}
+	}
+
+	&-right {
+		@extend %float-right;
+
+		&:not(:first-of-type) {
+			margin-right: calc(#{$space-tiny} * 2);
+		}
+	}
+
+	&-center {
+		@extend %float-none;
+	}
+
+	&-below {
+		margin-top: $space-tiny;
+	}
+
+	.page-section-ready & {
+		margin-top: calc(#{$space-tiny} * 2);
+	}
+
+	@include break-point(tablet) {
+		&-left {
+			@extend %float-none;
+
+			&:not(:first-of-type) {
+				margin-left: calc(#{$space-tiny} * 2);
+			}
+		}
+
+		&-right {
+			@extend %float-none;
+
+			&:not(:first-of-type) {
+				margin-right: calc(#{$space-tiny} * 2);
+			}
+		}
+
+		&-below {
+			margin-top: $space-small;
+		}
+	}
+
+	@include break-point(laptop) {
+		&-left {
+			@extend %float-none;
+
+			&:not(:first-of-type) {
+				margin-left: calc(#{$space-tiny} * 2);
+			}
+		}
+
+		&-right {
+			@extend %float-none;
+
+			&:not(:first-of-type) {
+				margin-right: calc(#{$space-tiny} * 2);
+			}
+		}
+
+		&-below {
+			margin-top: $space-small;
+		}
+	}
+}
+
+.button {
+	@extend %button;
+}
+
+
+.button.button-book {
+	@include button-style(solid);
+	@include button-size(small);
+    display: inline-block;
+    position: relative;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    padding: 5px 10px;
+    margin: 0;
+    background-color: $sky;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bold;
+    text-decoration: none;
+    color: $white;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 3px #aaa;
+    box-shadow: 0 0 3px #aaa;
+
+    &:hover {
+    	color: $white;
+    	background: $navy;
+    }
+
+    .result & {
+    	display: block;
+    	border: 0 none;
+    	box-shadow: none;
+    }
+}
+
+.button.button-book.select {
+    display: block;
+    background-color: $green2;
+}
+
+.hotel .button.button-book.unselect {
+    display: none;
+    background-color: $red2;
+}

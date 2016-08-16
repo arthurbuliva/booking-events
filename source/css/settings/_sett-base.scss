@@ -1,0 +1,41 @@
+
+/*  Structure */
+/* ==================================================== */
+
+
+/* Declare charset */
+@charset 'UTF-8';
+
+
+/* Box sizing */
+*,
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+
+
+/* Base HTML */
+html {
+	@include font-size(13px);
+	@include line-height(1.2);
+	color: $grey1;
+
+	@include break-point(tablet) {
+
+	}
+
+	@include break-point(laptop) {
+
+	}
+
+	@include break-point(desktop) {
+
+	}
+}
+
+
+/* Base body */
+body {
+
+}

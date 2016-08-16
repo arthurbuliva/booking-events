@@ -1,0 +1,46 @@
+
+/* Paragraphs */
+/* ==================================================== */
+
+
+p {
+	margin-top: 0.625em;
+	@include copy(regular);
+	color: $navy;
+
+	.page-intro-large & {
+		margin: 0;
+		font-size: 1.25 * 1em;
+		line-height: 1.5 * 1em;
+	}
+
+	.group & {
+		margin: 0;
+	}
+
+	&.testimonial-bubble {
+		font-size: 1.25 * 1rem;
+		line-height: 1.5 * 1em;
+	}
+
+	&.testimonial-role {
+		margin-bottom: 0;
+		font-size: 0.85 * 1rem;
+	}
+
+	&:not(:first-of-type) {
+		// margin-top: $space-small;
+	}
+
+	@include break-point(tablet) {
+
+	}
+
+	@include break-point(laptop) {
+
+	}
+
+	@include break-point(desktop) {
+
+	}
+}

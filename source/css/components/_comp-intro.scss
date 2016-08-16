@@ -1,0 +1,47 @@
+
+/*  Page intro */
+/* ==================================================== */
+
+
+.page-intro {
+	&-width-short {
+		width: 75%;
+	}
+
+	&-width-full {
+		width: 100%;
+	}
+
+	&-bottom {
+		margin-bottom: calc(#{$space-tiny} * 4);
+	}
+
+	&-bottom-zero {
+		margin-bottom: 0;
+	}
+}
+
+
+.intro-paragraphs {
+	@extend %flex-container;
+}
+
+
+.intro-paragraphs p {
+	@extend %flex-item;
+    max-width: 40%;
+	text-align: left;
+
+	&:first-of-type {
+		margin-right: calc(#{$space-tiny} * 4);
+	}
+}
+
+
+.intro-image {
+	@extend %flex-item;
+    max-width: 20%;
+	text-align: left;
+}
+
+

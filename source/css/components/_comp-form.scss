@@ -1,0 +1,168 @@
+
+/*  Forms */
+/* ==================================================== */
+
+
+form {
+	@extend %clearfix;
+	@include copy(regular);
+	position: relative;
+	width: 100%;
+	display: block;
+	background: transparent;
+}
+
+
+	
+fieldset {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 1rem;
+	background: transparent;
+	border: 0 none;
+	@extend %clearfix;
+
+	&:not(:first-child) {
+		margin-top: $space-tiny;
+
+		&.column-3 {
+		}
+	}
+}
+
+
+label {
+	display: block;
+	margin: 0 0 5px;
+	padding: 0;
+	// @include font-size(18px);
+	@include line-height(1.4);
+	// text-transform: uppercase;
+	// color: $grey1;
+
+    color: #355e97;
+    font-size: 12px;
+    font-weight: 300;
+    // font-family: "Helvetica Neue",Helvetica,sans-serif;
+    font-weight: 300;
+    letter-spacing: .5px;
+
+	&.radio-check {
+		display: inline;
+		font-weight: normal;
+	}
+
+	.result & {
+		// margin: 0;
+	}
+}
+		
+	
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+	// @include copy(bold);
+	@include letter-spacing(tiny);
+	display: block;
+	width: 100%;
+	max-width: 828px;
+	padding: 0.85rem 1rem;
+	@include font-size(18px);
+	border: 2px solid $white;
+	color: $white;
+	background: transparent;
+	appearance: none;
+	position: relative;
+
+
+
+    // margin-top: 5px;
+    border: 1px solid #a3b1bf;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: .3px;
+    // padding: 0;
+    // margin: 0;
+    // font-size: 1em;
+    color: $navy;
+    background: $white;
+    // font-family: Helvetica,sans-serif;
+
+	&:hover,
+	&:focus {
+		color: $navy;
+	}
+}
+
+
+textarea {
+	height: 10rem;
+}
+
+
+select {
+	min-width: 25%;
+	width: 100%;
+	margin: 0;
+}
+
+
+option {
+	padding: 0.25rem;
+}
+
+
+fieldset.radio ul {
+	@extend %clearfix;
+	margin-top: 0.25rem;
+	list-style-type: none;
+}
+		
+
+fieldset.radio ul li {
+	float: left;
+	margin: 0 2rem 0.25rem 0;
+}
+
+
+fieldset.radio ul li:last-child {
+	margin: 0;
+}
+
+
+p.form-help {
+	display: inline-block;
+	margin: 0.125rem 0 0.25rem;
+	@include font-size(15px);
+	color: #999;
+}
+
+p.form-data {
+	display: inline-block;
+	margin: 0.125rem 0 0.75rem;
+	@include font-size(18px);
+}
+
+
+input[type="submit"] {
+	// @extend .ease;
+	appearance: none;
+	@include border(0, solid, transparant);
+	@include outline(0, solid, transparant);
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+	}
+
+	&:active {
+	}
+}
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="Create your event">
+        <meta http-equiv="cleartype" content="on">
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script src="js/maps.js"></script>
+        <title>Create your event</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="js/jquery-ui-1.12.0/jquery-ui.min.css">
+    </head>
+
+    <body class="page-product">
+
+        <!-- booking header -->
+        <header class="page-header">
+            <div class="container">
+                <nav class="header-menu" role="navigation">
+
+                </nav>
+            </div>
+        </header>
+        <!-- end header -->
+
+
+        <!-- start content -->
+        <main role="main">
+            <section class="page-section page-section-hotels">
+                <div class="container">
+                    <header>
+                        <h1>Create your event</h1>
+                    </header>
+
+                    <form action="" class="">
+                        <div class="event-content create-event-content">
+                            <div class="create-event-inputs">
+                                <fieldset>
+                                    <label for="event-name">Event name</label>
+                                    <input type="text" name="event-name" id="event-name" class="event-name" placeholder="XYS Event">
+                                </fieldset>
+
+                                <fieldset>
+                                    <label for="event-location">Location</label>
+                                    <input type="text" name="event-location" id="event-location" class="event-location" placeholder="Venue, City" onkeyup="getCoordinates()">
+                                </fieldset>
+                                
+                                <input type="hidden" id="latitude">
+                                <input type="hidden" id="longitude">
+
+                                <fieldset>
+                                    <label for="event-from">Date from</label>
+                                    <input type="date" name="event-from" id="event-from" class="event-from" placeholder="dd/mm/yyyy">
+                                </fieldset>
+
+                                <fieldset>
+                                    <label for="event-to">Date to</label>
+                                    <input type="date" name="event-to" id="event-to" class="event-to" placeholder="dd/mm/yyyy">
+                                </fieldset>
+
+                                <!-- <fieldset>
+                                    <label for="event-radius">Password</label>
+                                    <input type="text" name="event-radius" id="" class="event-radius" placeholder="">
+                                </fieldset> -->
+
+                                <fieldset>
+                                    <label for="event-terms">I've read and agree to the Booking.com for Events <a href="" title="">terms and conditions</a></label>
+                                    <input type="checkbox" name="event-terms" id="event-terms" class="event-terms">
+                                </fieldset>
+                            </div>
+
+                            <figure class="create-event-map">
+                                <div id="googleMap" style="width:100%;height:380px;"></div>
+
+                            </figure>
+                        </div>
+
+                        <div class="results">
+                            <header>
+                                <h2>My selected options</h2>
+                            </header>
+
+                            <div class="results-box selected" id="sortable">
+
+                            </div>
+                        </div>
+
+                        <div class="results">
+                            <header>
+                                <h2>Select accommodation options</h2>
+                            </header>
+                            <div class="results-box selection-options">
+                            </div>
+                        </div>
+
+                        <fieldset>
+                            <input type="button" name="submit" id="submit" class="submit button button-book" value="Create event">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!-- end content -->
+
+
+        <!-- booking footer -->
+        <footer class="page-footer">
+            <div class="footer-box">
+                <div class="container">
+                    <nav class="footer-menu">
+
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        <script type="text/template" id="hotel_template">
+            <fieldset class="result">
+                <input type="hidden" id="hotel_id" name="hotel_id" value="{{ hotel_id }}">
+                <input type="checkbox" name="result-1" id="result-1" class="result-select" style="position: absolute; visibility: hidden;">
+
+                <label for="result-1" class="hotel">
+                    <figure class="hotel-image">
+                        <img src="{{ photo }}" alt="">
+                    </figure>
+
+                    <div class="hotel-details">
+                        <div class="accommodation">
+                            <div class="rating">
+                                <span class="icon-rating"></span>
+                            </div>
+
+                            <header>
+                                <h3 class="">
+                                    <a class="" href="" target="_blank">{{ hotel_name }}</a>
+                                    <i class="b-sprite stars ratings_stars_4  star_track"><span class="invisible_spoken">4-star hotel</span></i>
+                                    <i data-title="This property has agreed  to be part of our Preferred Property programme which groups together properties that stand out thanks to their excellent service and quality/price ratio with competitive prices. Participation in the programme requires meeting a specific set of criteria and takes into account feedback from previous guests." id="b_tt_holder_13" class="b-sprite icon_deal_smart jq_tooltip" rel="300">
+                                        <span class="invisible_spoken">This property has agreed  to be part of our Preferred Property programme which groups together properties that stand out thanks to their excellent service and quality/price ratio with competitive prices. Participation in the programme requires meeting a specific set of criteria and takes into account feedback from previous guests.</span>
+                                    </i>
+                                </h3>
+                            </header>
+
+                            <p>
+                                <strong>600m from {{ location }}</strong>
+                            </p>
+
+                            <p>{{ description }}</p>
+                        </div>
+
+                        <div class="pricing">
+                            <header>
+                                <h3><a href="">Very good {{ review_score }}</a></h3>
+                            </header>
+
+                            <p>
+                                <a class="link_to_hotel_reviews_from_sr" target="_blank" href="">
+                                    <span class="score_from_number_of_reviews" style="margin-bottom: 5px;">
+                                4,699 reviews</span>
+                                </a>
+                            </p>
+
+                            <div class="price-total">
+                                <span>total</span>${{price-total}}
+                                
+                            </div>
+                        </div>
+
+                        <div class="admin-box">
+                            <span class="drag bicon-sidemenu"></span>
+                            <span class="remove bicon-close"></span>
+                            <span class="select bicon-star"></span>
+                        </div>
+                    </div>
+                </label>
+        </fieldset>
+        </script>
+
+        <!-- start other JS files -->
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="js/jquery-ui-1.12.0/jquery-ui.min.js"></script>
+        <script src="js/mustache.js"></script>
+        <script src="js/create.js"></script>
+        <!-- end other JS files -->
+    </body>
+</html>
+
+
+

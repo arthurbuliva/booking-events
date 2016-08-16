@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="; initial-scale=1.0; maximum-scale=1.0;">
+        <meta name="description" content="The Big Bake Fesitval">
+        <meta http-equiv="cleartype" content="on">
+        <title>The Big Bake Fesitval</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body class="page-product">
+
+        <!-- booking header -->
+        <header class="page-header">
+            <div class="container">
+                <nav class="header-menu" role="navigation">
+
+                </nav>
+            </div>
+        </header>
+        <!-- end header -->
+
+
+        <!-- start content -->
+        <main role="main">
+            <section class="hero">
+                <div class="hero-box">
+                <header class="container hero-text">
+                    <div class="hero-text-box">
+                        <h1>The Big Bake Fesitval</h1>
+                        <h4><span></span>Luke's Tavern, Glasgow &nbsp; &nbsp; &nbsp;<span></span>21-26 October 2016</h4>
+                    </div>
+                </header>
+                </div>
+            </section>
+            
+            <script type="text/javascript">
+            var names = [];
+names[0] = prompt("New member name?");
+localStorage.setItem("names", JSON.stringify(names));
+
+//...
+var storedNames = JSON.parse(localStorage.getItem("names"));
+            </script>
+
+            <section class="page-section page-section-hotels">
+                <div class="container">
+                    <div class="event-content">
+                        <header>
+                            <h2>Recommended accommodation options</h2>
+                        </header>
+
+                        <div class="event-accommodation">
+                            <section class="hotel">
+                                <figure class="hotel-image">
+                                    <img src="img/grand.jpg" alt="">
+                                </figure>
+
+                                <section class="hotel-details">
+                                    <div class="accommodation">
+                                        <div class="rating">
+                                            <span class="icon-rating"></span>
+                                        </div>
+
+                                        <header>
+                                            <h3 class="">
+                                                <a class="" href="" target="_blank">The Glasgow City Hotel</a>
+                                                <i class="b-sprite stars ratings_stars_4  star_track"><span class="invisible_spoken">4-star hotel</span></i>
+                                                <i data-title="This property has agreed  to be part of our Preferred Property programme which groups together properties that stand out thanks to their excellent service and quality/price ratio with competitive prices. Participation in the programme requires meeting a specific set of criteria and takes into account feedback from previous guests." id="b_tt_holder_13" class="b-sprite icon_deal_smart jq_tooltip" rel="300">
+                                                    <span class="invisible_spoken">This property has agreed  to be part of our Preferred Property programme which groups together properties that stand out thanks to their excellent service and quality/price ratio with competitive prices. Participation in the programme requires meeting a specific set of criteria and takes into account feedback from previous guests.</span>
+                                                </i>
+                                            </h3>
+                                        </header>
+
+                                        <p>
+                                            <strong>600m from Luke's Tavern</strong>
+                                        </p>
+
+                                        <p>The 4-star Glasgow City Hotel is in Glasgow city centre, 800 metres from Glasgow Central Rail Station. It has large rooms, a sauna, steam room and indoor swimming pool with spa pool.</p>
+                                    </div>
+
+                                    <div class="pricing">
+                                        <header>
+                                            <h3><a href="">Very good 8.4</a></h3>
+                                        </header>
+
+                                        <p>
+                                            <a class="link_to_hotel_reviews_from_sr" target="_blank" href="">
+                                                <span class="score_from_number_of_reviews" style="margin-bottom: 5px;">
+                                            4,699 reviews</span>
+                                            </a>
+                                        </p>
+
+                                        <div class="price-total">
+                                            <span>total</span>$300
+                                            
+                                        </div>
+
+                                        <div class="price-nightly">
+                                            <span>per night</span>$125
+                                            
+                                        </div>
+
+                                        <a href="" class="button button-book" title="">Book now</a>
+                                    </div>
+                                </section>
+                            </section>
+
+                            <section class="hotel">
+                                <figure class="hotel-image">
+                                    <img src="img/grand.jpg" alt="">
+                                </figure>
+
+                                <section class="hotel-details">
+                                    <div class="accommodation">
+                                        <div class="rating">
+                                            <span class="icon-rating"></span>
+                                        </div>
+
+                                        <header>
+                                            <h3 class="">
+                                                <a class="" href="" target="_blank">The Glasgow Central Hotel</a>
+                                                <i class="b-sprite stars ratings_stars_4  star_track"><span class="invisible_spoken">4-star hotel</span></i>
+                                                <i data-title="This property has agreed  to be part of our Preferred Property programme which groups together properties that stand out thanks to their excellent service and quality/price ratio with competitive prices. Participation in the programme requires meeting a specific set of criteria and takes into account feedback from previous guests." id="b_tt_holder_13" class="b-sprite icon_deal_smart jq_tooltip" rel="300">
+                                                    <span class="invisible_spoken">This property has agreed  to be part of our Preferred Property programme which groups together properties that stand out thanks to their excellent service and quality/price ratio with competitive prices. Participation in the programme requires meeting a specific set of criteria and takes into account feedback from previous guests.</span>
+                                                </i>
+                                            </h3>
+                                        </header>
+
+                                        <p>
+                                            <strong>900m from Luke's Tavern</strong>
+                                        </p>
+
+                                        <p>The 4-star Glasgow City Hotel is in Glasgow city centre, 800 metres from Glasgow Central Rail Station. It has large rooms, a sauna, steam room and indoor swimming pool with spa pool.</p>
+                                    </div>
+
+                                    <div class="pricing">
+                                        <header>
+                                            <h3><a href="">Fabulous 8.6</a></h3>
+                                        </header>
+
+                                        <p>
+                                            <a class="link_to_hotel_reviews_from_sr" target="_blank" href="">
+                                                <span class="score_from_number_of_reviews" style="margin-bottom: 5px;">
+                                            4,699 reviews</span>
+                                            </a>
+                                        </p>
+
+                                        <div class="price-total">
+                                            <span>total</span>$300
+                                            
+                                        </div>
+
+                                        <div class="price-nightly">
+                                            <span>per night</span>$125
+                                            
+                                        </div>
+
+                                        <a href="" class="button button-book" title="">Book now</a>
+                                    </div>
+                                </section>
+                            </section>
+
+                            <section class="hotel">
+                                <figure class="hotel-image">
+                                    <img src="img/grand.jpg" alt="">
+                                </figure>
+
+                                <section class="hotel-details">
+                                    <div class="accommodation">
+                                        <div class="rating">
+                                            <span class="icon-rating"></span>
+                                        </div>
+
+                                        <header>
+                                            <h3 class="">
+                                                <a class="" href="" target="_blank">The Z Hotel Glasgow</a>
+                                                <i class="b-sprite stars ratings_stars_4  star_track"><span class="invisible_spoken">4-star hotel</span></i>
+                                                <i data-title="This property has agreed  to be part of our Preferred Property programme which groups together properties that stand out thanks to their excellent service and quality/price ratio with competitive prices. Participation in the programme requires meeting a specific set of criteria and takes into account feedback from previous guests." id="b_tt_holder_13" class="b-sprite icon_deal_smart jq_tooltip" rel="300">
+                                                    <span class="invisible_spoken">This property has agreed  to be part of our Preferred Property programme which groups together properties that stand out thanks to their excellent service and quality/price ratio with competitive prices. Participation in the programme requires meeting a specific set of criteria and takes into account feedback from previous guests.</span>
+                                                </i>
+                                            </h3>
+                                        </header>
+
+                                        <p>
+                                            <strong>500m from Luke's Tavern</strong>
+                                        </p>
+
+                                        <p>The 4-star Glasgow City Hotel is in Glasgow city centre, 800 metres from Glasgow Central Rail Station. It has large rooms, a sauna, steam room and indoor swimming pool with spa pool.</p>
+                                    </div>
+
+                                    <div class="pricing">
+                                        <header>
+                                            <h3><a href="">Superb 9.1</a></h3>
+                                        </header>
+
+                                        <p>
+                                            <a class="link_to_hotel_reviews_from_sr" target="_blank" href="">
+                                                <span class="score_from_number_of_reviews" style="margin-bottom: 5px;">
+                                            4,699 reviews</span>
+                                            </a>
+                                        </p>
+
+                                        <div class="price-total">
+                                            <span>total</span>$300
+                                            
+                                        </div>
+
+                                        <div class="price-nightly">
+                                            <span>per night</span>$125
+                                            
+                                        </div>
+
+                                        <a href="" class="button button-book" title="">Book now</a>
+                                    </div>
+                                </section>
+                            </section>
+
+                            <section class="hotel">
+                                <figure class="hotel-image">
+                                    <img src="img/grand.jpg" alt="">
+                                </figure>
+
+                                <section class="hotel-details">
+                                    <div class="accommodation">
+                                        <div class="rating">
+                                            <span class="icon-rating"></span>
+                                        </div>
+
+                                        <header>
+                                            <h3 class="">
+                                                <a class="" href="" target="_blank">Alexander Thomson</a>
+                                                <i class="b-sprite stars ratings_stars_4  star_track"><span class="invisible_spoken">4-star hotel</span></i>
+                                                <i data-title="This property has agreed  to be part of our Preferred Property programme which groups together properties that stand out thanks to their excellent service and quality/price ratio with competitive prices. Participation in the programme requires meeting a specific set of criteria and takes into account feedback from previous guests." id="b_tt_holder_13" class="b-sprite icon_deal_smart jq_tooltip" rel="300">
+                                                    <span class="invisible_spoken">This property has agreed  to be part of our Preferred Property programme which groups together properties that stand out thanks to their excellent service and quality/price ratio with competitive prices. Participation in the programme requires meeting a specific set of criteria and takes into account feedback from previous guests.</span>
+                                                </i>
+                                            </h3>
+                                        </header>
+
+                                        <p>
+                                            <strong>1200m from Luke's Tavern</strong>
+                                        </p>
+
+                                        <p>The 4-star Glasgow City Hotel is in Glasgow city centre, 800 metres from Glasgow Central Rail Station. It has large rooms, a sauna, steam room and indoor swimming pool with spa pool.</p>
+                                    </div>
+
+                                    <div class="pricing">
+                                        <header>
+                                            <h3><a href="">Good 7.5</a></h3>
+                                        </header>
+
+                                        <p>
+                                            <a class="link_to_hotel_reviews_from_sr" target="_blank" href="">
+                                                <span class="score_from_number_of_reviews" style="margin-bottom: 5px;">
+                                            4,699 reviews</span>
+                                            </a>
+                                        </p>
+
+                                        <div class="price-total">
+                                            <span>total</span>$300
+                                            
+                                        </div>
+
+                                        <div class="price-nightly">
+                                            <span>per night</span>$125
+                                            
+                                        </div>
+
+                                        <a href="" class="button button-book" title="">Book now</a>
+                                    </div>
+                                </section>
+                            </section>
+
+                            <section class="hotel">
+                                <figure class="hotel-image">
+                                    <img src="img/grand.jpg" alt="">
+                                </figure>
+
+                                <section class="hotel-details">
+                                    <div class="accommodation">
+                                        <div class="rating">
+                                            <span class="icon-rating"></span>
+                                        </div>
+
+                                        <header>
+                                            <h3 class="">
+                                                <a class="" href="" target="_blank">The Glasgow City Hotel</a>
+                                                <i class="b-sprite stars ratings_stars_4  star_track"><span class="invisible_spoken">4-star hotel</span></i>
+                                                <i data-title="This property has agreed  to be part of our Preferred Property programme which groups together properties that stand out thanks to their excellent service and quality/price ratio with competitive prices. Participation in the programme requires meeting a specific set of criteria and takes into account feedback from previous guests." id="b_tt_holder_13" class="b-sprite icon_deal_smart jq_tooltip" rel="300">
+                                                    <span class="invisible_spoken">This property has agreed  to be part of our Preferred Property programme which groups together properties that stand out thanks to their excellent service and quality/price ratio with competitive prices. Participation in the programme requires meeting a specific set of criteria and takes into account feedback from previous guests.</span>
+                                                </i>
+                                            </h3>
+                                        </header>
+
+                                        <p>
+                                            <strong>900m from Luke's Tavern</strong>
+                                        </p>
+
+                                        <p>The 4-star Glasgow City Hotel is in Glasgow city centre, 800 metres from Glasgow Central Rail Station. It has large rooms, a sauna, steam room and indoor swimming pool with spa pool.</p>
+                                    </div>
+
+                                    <div class="pricing">
+                                        <header>
+                                            <h3><a href="">Fabulous 8.6</a></h3>
+                                        </header>
+
+                                        <p>
+                                            <a class="link_to_hotel_reviews_from_sr" target="_blank" href="">
+                                                <span class="score_from_number_of_reviews" style="margin-bottom: 5px;">
+                                            4,699 reviews</span>
+                                            </a>
+                                        </p>
+
+                                        <div class="price-total">
+                                            <span>total</span>$300
+                                            
+                                        </div>
+
+                                        <div class="price-nightly">
+                                            <span>per night</span>$125
+                                            
+                                        </div>
+
+                                        <a href="" class="button button-book" title="">Book now</a>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+
+                        <aside class="event-meta">
+                            <div class="event-meta-box event-info">
+                                <header>
+                                    <h5>About the event</h5>
+                                </header>
+
+                                <p>The 4-star Glasgow City Hotel is in Glasgow city centre, 800 metres from Glasgow Central Rail Station. It has large rooms, a sauna, steam room and indoor swimming pool with spa pool.</p>
+
+                                <p>The 4-star Glasgow City Hotel is in Glasgow city centre, 800 metres from Glasgow Central Rail Station. It has large rooms, a sauna, steam room and indoor swimming pool with spa pool.</p>
+                            </div>
+
+                            <!-- <hr class="divider"> -->
+
+                            <figure class="event-map">
+                                <!-- <figcation>
+                                    <h5>Event map</h5>
+                                </figcation> -->
+                                <br>
+                                <!-- <br> -->
+
+                                <img src="img/event-cover.jpg" alt="">
+                            </figure>
+
+                            <hr class="divider">
+
+                            <div class="event-meta-box event-organizer">
+                                <header>
+                                    <h5>About the organizer</h5>
+                                </header>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- end content -->
+
+
+        <!-- booking footer -->
+        <footer class="page-footer">
+            <div class="footer-box">
+                <div class="container">
+                    <nav class="footer-menu">
+
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+
+        <!-- start other JS files -->
+        <script src="js/main.js"></script>
+        <!-- end other JS files -->
+
+    </body>
+</html>
+
+
+

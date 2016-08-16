@@ -1,0 +1,25 @@
+
+/* Container */
+/* ==================================================== */
+
+
+%container {
+	@extend %clearfix;
+	max-width: calc(100% - (#{$space-tiny} * 4));
+    margin: auto;
+
+    @include break-point(tablet) {
+        max-width: calc(100% - (#{$space-tiny} * 8));
+    }
+
+    @include break-point(laptop) {
+        max-width: calc(100% - (#{$space-tiny} * 12));
+    }
+
+    @include break-point(desktop) {
+        max-width: calc(100% - (#{$space-tiny} * 16));
+    }
+}
+
+// Usage:
+// div { @extend %container; }

@@ -1,0 +1,36 @@
+
+/*  Button style */
+/* ==================================================== */
+
+
+@mixin button-style($button-style) {
+	@extend %text-align-center;
+	@extend %text-align-left;
+	@extend %text-transform-upper;
+	@include copy(bold);
+	@include line-height(1);
+	@include border-radius(0);
+	@include box-shadow(0px, 0px, 0px, 0px, rgba(0, 0, 0, 0));
+	@include border(0, solid, transparant);
+	@include outline(0, solid, transparant);
+	display: inline-block;
+	appearance: none;
+
+	/* Solid */
+	@if $button-style == 'solid' {
+		color: $white;
+		background: $navy;
+		@include border(3px, solid, $navy);
+	}
+
+	/* Outline */
+	@else if $button-style == 'outline' {
+		color: $navy;
+		background: transparent;
+		@include border(3px, solid, $navy);
+	}
+}
+
+// div { @include button-style(solid); }
+
+

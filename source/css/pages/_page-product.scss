@@ -1,0 +1,97 @@
+
+/*  Page: Product */
+/* ==================================================== */
+
+
+//...
+
+.price-total,
+.price-nightly {
+	margin: 1rem 0;
+	font-size: 20px;
+	line-height: 1.2em;
+	color: $navy;
+    font-weight: 400;
+
+	span {
+		@include copy(regular);
+		display: block;
+		font-size: 0.625em;
+		line-height: 1;
+		text-transform: uppercase;
+		color: $grey2;
+	}
+
+    .result & {
+        margin: 10px 0;
+        font-size: 18px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #003580;
+        display: inline-block;
+        padding: 5px 10px;
+        background: #e9e9e9;
+        border-radius: 2px;
+    }
+}
+
+
+.invisible_spoken {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px,1px,1px,1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    white-space: normal;
+    overflow: hidden;
+}
+
+
+#ajaxsrwrap .sr_item .icon_deal_smart,
+.sr_compset_badges .icon_deal_smart,
+.sr_compset_info .icon_deal_smart {
+    vertical-align: top;
+    position: relative;
+    top: 1px;
+}
+
+#ajaxsrwrap .sr_item .stars,
+.sr_compset_badges .stars {
+    margin-top: 0;
+    position: relative;
+    top: 5px;
+    vertical-align: top;
+}
+.b-sprite-3 i.b-sprite,
+.b-sprite-3 .footer_social_email {
+    display: inline-block;
+}
+.b-sprite-3 .stars {
+    margin-top: 5px;
+}
+.b-sprite.ratings_stars_4 {
+    background-position: -203px -113px;
+    width: 52px;
+    height: 12px;
+}
+
+.b-sprite.icon_deal_smart {
+    background-position: -632px -1px;
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: 4px;
+}
+
+.b-sprite {
+    background-image: url("//r-ec.bstatic.com/static/img/sprite/main/4217de89699c2b59f48a878ba0f501e8b0602e2e.png");
+    background-repeat: no-repeat !important;
+    display: inline-block;
+}
+
+.divider {
+	margin: 24px 0;
+	border-top: 1px solid #b3c2d8;
+}

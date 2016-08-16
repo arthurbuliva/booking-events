@@ -1,0 +1,46 @@
+
+/*  Media */
+/* ==================================================== */
+
+
+figure {
+
+}
+
+
+figcaption {
+	display: block;
+
+	@include break-point(tablet) {
+
+	}
+
+	@include break-point(laptop) {
+
+	}
+
+	@include break-point(desktop) {
+
+	}
+}
+
+
+img {
+	width: 100%;
+	height: auto;
+
+	@include break-point(tablet) {
+
+	}
+
+	@include break-point(laptop) {
+
+	}
+
+	@include break-point(desktop) {
+
+	}
+}
+
+
+

@@ -1,0 +1,52 @@
+
+/*  Icons */
+/* ==================================================== */
+
+@charset "UTF-8";
+
+@font-face {
+	font-family: "booking-iconset";
+	src: url("../fonts/booking-iconset.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="bicon-"],
+[class*=" bicon-"],
+[class*="\a bicon-"] {
+    font-family: 'booking-iconset';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bicon-star:before {
+  content: "\b010";
+}
+
+.bicon-trashcan:before {
+  content: "\b172";
+}
+
+.bicon-close:before {
+  content: "\b195";
+}
+
+.bicon-sidemenu:before {
+  content: "\b0fa";
+}
+
+.bicon-marker:before {
+  content: "\b023";
+}
+
+// .bicon {
+// 	width: 48px;
+// }
+
+

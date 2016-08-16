@@ -1,0 +1,25 @@
+
+/*  Button state */
+/* ==================================================== */
+
+
+@mixin button-state($button-state) {
+	/* Large */
+	@if $button-state == 'large' {
+
+	}
+
+	/* Small */
+	@else if $button-state == 'small' {
+
+	}
+
+	/* Tiny */
+	@else if $button-state == 'tiny' {
+
+	}
+}
+
+// div { @include button-state(large); }
+
+

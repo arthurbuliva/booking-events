@@ -1,0 +1,137 @@
+
+/*  Header */
+/* ==================================================== */
+
+
+header {
+
+}
+
+
+.page-header {
+	position: fixed;
+	width: 100%;
+	z-index: 9;
+	// background: $white;
+}
+
+
+.header-menu {
+	@include flexbox();
+	@include flex-wrap(nowrap);
+	@include flex-direction(column);
+	justify-content: center;
+	align-content: stretch;
+	text-align: center;
+
+    @include break-point(tablet) {
+
+	}
+
+	@include break-point(laptop) {
+		@include flex-direction(row);
+    	justify-content: flex-end;
+	}
+
+	@include break-point(desktop) {
+
+	}
+}
+
+
+.header-menu-item {
+	@include flex(1, auto, 0);
+	@include copy(bold);
+	@include font-size(16px);
+	@include line-height(1);
+	@include border(0, solid, transparent);
+	align-self: flex-end;
+	color: $yellow;
+	padding: 1rem;
+	text-decoration: none;
+	background: transparent;
+	
+
+	&:not(:first-child) {
+
+	}
+
+	&:visited {
+
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+	}
+
+	@include break-point(mobile) {
+
+	}
+
+	@include break-point(tablet) {
+
+	}
+
+	@include break-point(laptop) {
+		text-align: right;
+
+	}
+
+	@include break-point(desktop) {
+
+	}
+}
+
+
+.header-menu-item.header-menu-item-logo {
+	@include copy(bold);
+	@include font-size(32px);
+	@include line-height();
+	@include letter-spacing(none);
+	@include border(0, solid, transparent);
+	max-width: 148px;
+	padding: 0;
+	text-decoration: none;
+	color: $yellow;
+
+	&:visited,
+	&:hover,
+	&:focus,
+	&:active {
+		color: $yellow;
+	}
+
+	img {
+		max-width: 140px;
+	}
+
+	.modal & {
+		@include font-size(36px);
+		float: none;
+		margin-bottom: 1.5rem;
+		padding: 0.35rem 1.5rem;
+	}
+
+	@include break-point(tablet) {
+
+	}
+
+	@include break-point(laptop) {
+		margin-right: auto;
+    	text-align: left;
+	}
+
+	@include break-point(desktop) {
+
+	}
+}
+
+
+.header-menu-item.header-menu-item-toggle {
+	display: none;
+}
+
+
+

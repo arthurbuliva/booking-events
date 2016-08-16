@@ -1,0 +1,136 @@
+
+/*  hotel */
+/* ==================================================== */
+
+
+.hotel {
+    @extend %flex-container;
+    clear: both;
+    @include border(1px, solid, $grey3);
+    @include border-radius(3px);
+    margin: 10px 0;
+    padding: 10px;
+
+    &:hover {
+    	background: $grey5;
+
+    	// .result & {
+    	// 	background: $green5;
+    	// }
+    }
+}
+
+.hotel-image {
+	@extend %flex-item;
+    max-width: 200px;
+	margin-right: 10px;
+	text-align: left;
+
+	// .result & {
+ //    	max-width: 100%;
+ //    	margin-right: 0;
+ //    	margin-bottom: 10px;
+ //    }
+
+	img {
+		width: 100%;
+	}
+}
+
+.hotel-details {
+	@extend %flex-item;
+    max-width: calc(100% - 210px);
+    text-align: left;
+
+    // .result & {
+    // 	max-width: 100%;
+    // }
+}
+
+
+
+.hotel-details {
+    @extend %flex-container;
+    clear: both;
+}
+
+.accommodation {
+	@extend %flex-item;
+    max-width: 62.5%;
+	margin-right: 10px;
+
+	// .result & {
+ //    	max-width: 100%;
+ //    	margin-right: 0;
+ //    	margin-bottom: 10px;
+ //    	text-align: left;
+ //    }
+}
+
+.pricing {
+	@extend %flex-item;
+    max-width: calc(20% - 10px);
+    text-align: left;
+
+    // .result & {
+    // 	max-width: 100%;
+    // 	text-align: left;
+    // }
+
+    p {
+    	.result & {
+    		display: none;
+    	}
+    }
+}
+
+.admin-box {
+    @extend %flex-item;
+    max-width: 17.5%;
+    // margin-right: 10px;
+    text-align: right;
+    
+
+    // .result & {
+ //     max-width: 100%;
+ //     margin-right: 0;
+ //     margin-bottom: 10px;
+ //     text-align: left;
+ //    }
+}
+
+.admin-box span {
+    // width: 28px;
+    // height: 28px;
+    background: transparent;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    color: $grey3;
+    display: block;
+    float: right;
+    padding: 0px 0 0;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+        color: $navy;
+    }
+}
+
+.admin-box span.bicon-star {
+    .selected & {
+        display: none;
+    }
+}
+
+.admin-box span.bicon-close,
+.admin-box span.bicon-sidemenu {
+    .selection-options & {
+        display: none;
+    }
+}
+
+

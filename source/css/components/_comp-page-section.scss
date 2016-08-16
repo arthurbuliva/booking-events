@@ -1,0 +1,21 @@
+
+/*  Page section */
+/* ==================================================== */
+
+
+.page-section {
+	clear: both;
+	@extend %columns;
+	margin-top: calc(#{$space-tiny} * 4);
+
+	&-hero {
+		// text-align: center;
+	}
+
+
+	&-hotels {
+		// text-align: center;
+	}
+}
+
+

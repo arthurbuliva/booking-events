@@ -1,0 +1,29 @@
+
+/* Typefaces */
+/* ==================================================== */
+
+
+$font-url: 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+
+@if variable-exists(font-url) {
+  @import url($font-url);
+}
+
+/* Copy font */
+@mixin copy($copy) {
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+
+	/* Bold */
+	@if $copy == 'bold' {
+		font-weight: 700;
+	}
+
+	/* Regular */
+	@else if $copy == 'regular' {
+		font-weight: 400;
+	}
+}
+
+
+// Usage:
+// div { @include copy(regular); }

@@ -1,0 +1,50 @@
+
+/*  Flex-box grid */
+/* ==================================================== */
+
+
+$column-count: 23; // 16
+$gutter-count: $column-count - 1;
+$context: 1440;
+$column-width: 62; //46.4516129
+$gutter-width: $column-width; // 62;
+$list: (1 0);
+
+@for $c from 1 through $column-count {
+  $w: percentage(($c + ($c - 1)) * ($column-width / $context));
+  $list: append($list, ($c $w));
+}
+
+%columns {
+  @extend %clearfix;
+	width: auto;
+	margin: 0 auto;
+	height: auto;
+}
+
+// Usage:
+// div { @extend %columns; }
+
+%column {
+  display: block;
+	float: left;
+	height: auto;
+
+  &:not(:first-child) {
+    margin-left: percentage($gutter-width / $context);
+  }
+}
+
+// Usage:
+// div { @extend %column-1; }
+
+@each $cols, $guts in $list {
+  %column-#{$cols} {
+    @extend %column;
+    width: #{$guts};
+
+    @if $cols == $column-count {
+      margin-left: 0px !important;
+    }
+  }
+}
